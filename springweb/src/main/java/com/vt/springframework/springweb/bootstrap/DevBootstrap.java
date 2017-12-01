@@ -52,7 +52,7 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
 		publisher1.setAddress("Sector 74");
 		publisherRepository.save(publisher1);
 		
-		Book noEJB = new Book("J2EE Development without EJB", "23444", publisher);
+		Book noEJB = new Book("J2EE Development without EJB", "23444", publisher1);
 		author2.getBooks().add(noEJB);
 		noEJB.getAuthors().add(author2);
 
@@ -66,7 +66,7 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
 		publisher2.setAddress("Sector 73");
 		publisherRepository.save(publisher2);
 		
-		Book primefaces= new Book("Primefaces Workbook", "23444", publisher);
+		Book primefaces= new Book("Primefaces Workbook", "23444", publisher2);
 		author3.getBooks().add(primefaces);
 		primefaces.getAuthors().add(author3);
 
